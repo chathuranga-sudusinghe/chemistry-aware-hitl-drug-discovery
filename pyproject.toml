@@ -1,0 +1,24 @@
+[project]
+name = "chemistry-aware-hitl-drug-discovery"
+version = "0.1.0"
+description = "Research on chemistry-aware Human-in-the-Loop Agentic AI for review-budget-constrained small-molecule drug discovery and lead optimization."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "Apache-2.0" }
+authors = [
+  { name = "Chathuranga Sudusinghe" },
+]
+
+# Runtime and research dependencies will be added only when their use is
+# methodologically justified and explicitly approved.
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_configs = true
