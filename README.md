@@ -42,6 +42,7 @@ This is a **PROPOSED research hypothesis**, not an established result. The exact
 - [`docs/methodology.md`](docs/methodology.md) — proposed methodological framework.
 - [`docs/chemistry-scope.md`](docs/chemistry-scope.md) — chemistry depth and open domain decisions.
 - [`docs/literature-review.md`](docs/literature-review.md) — scientific synthesis of closest prior work.
+- [`docs/literature-search.md`](docs/literature-search.md) — literature search protocol and log.
 - [`docs/references.md`](docs/references.md) — verified reference registry.
 - [`docs/compute-strategy.md`](docs/compute-strategy.md) — local-first / AWS-burst compute policy.
 - [`docs/decisions/README.md`](docs/decisions/README.md) — accepted and proposed research decisions.
