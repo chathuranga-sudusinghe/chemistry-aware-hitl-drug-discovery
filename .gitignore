@@ -1,0 +1,70 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+.python-version
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*
+.aws/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Data: keep only documentation / explicit tiny fixtures
+/data/raw/*
+/data/interim/*
+/data/processed/*
+/data/external/*
+!/data/**/.gitkeep
+!/data/README.md
+
+# Models and checkpoints
+/models/checkpoints/
+/models/trained/
+*.ckpt
+*.pt
+*.pth
+*.onnx
+
+# Experiment outputs
+outputs/
+runs/
+artifacts/
+mlruns/
+wandb/
+lightning_logs/
+*.log
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+~*
