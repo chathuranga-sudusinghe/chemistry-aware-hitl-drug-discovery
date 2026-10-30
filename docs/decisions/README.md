@@ -52,6 +52,21 @@ This directory records research and governance decisions that materially constra
 - **Proposal:** Separate expert escalation from expert-review prioritization and evaluate both under fixed medicinal-chemist review budgets.
 - **Open:** Utility definition, labels/ground truth, optimization objective, and final budget schedule.
 
+### DR-008 — Dataset-first campaign selection with a separate replication
+
+- **Status:** PROPOSED
+- **Context:** Issue #3 requires candidate targets to be compared on public-data availability, assay quality, licensing, and feasibility, and the target is still open. A target with abundant public records can still lack a coherent assay, a reconstructable decision-time order, or a defensible evaluation. Issue #6 (the formal data plan) depends on Issues #3 to #5.
+- **Proposal:**
+  1. Compare experimental campaigns from public documentation first ([`../candidate-campaigns.md`](../candidate-campaigns.md)), under Issue #3. No record-level check is proposed before the steps in item 5.
+  2. Use one coherent campaign as the primary study and an independently sourced dataset as a separately trained replication. Do not pool datasets into one training table, and do not claim generalisation from a single campaign.
+  3. Treat chronology reconstructed from order, shipment, or release dates as an assumed-availability analysis unless dated provenance is verified.
+  4. Do not rescue a failed candidate through outcome-driven additions. Any correction, new revision, or reassessment requires a documented rationale and owner approval.
+  5. Proposed sequence within the current issue order: (a) documentation comparison (Issue #3); (b) the owner decides whether to provisionally accept a shortlist of candidate campaigns as the target candidates (Issue #3); (c) the formal data plan and its approvals (Issue #6); (d) record-level feasibility checks (counts, dates, identity, endpoint overlap) only under explicit owner approval and gates fixed beforehand; (e) final campaign confirmation. Performing record-level checks before target acceptance would require an owner-approved change to Issues #3 and #6.
+- **Evidence and references:** [`../candidate-campaigns.md`](../candidate-campaigns.md) (dataset documentation, access dates 2026-10-25 to 2026-10-30). This entry registers no new literature, and publication-derived claims are excluded until they are registered.
+- **Alternatives considered:** target-first selection; pooling several databases into one training table; a single dataset only; a ChEMBL-wide primary dataset.
+- **Consequences:** The target and datasets remain OPEN. Any inspection of data requires approval under AGENTS.md §4, and gate thresholds belong to Issue #6. Claims from a single campaign are limited to that campaign. Issue #3 stays open after this change: the owner has not accepted a target.
+- **Date and approval context:** Proposed 2026-10-29 and revised 2026-10-30 after an independent review. Documented as PROPOSED with the owner's approval of this scope, on branch `docs/issue-3-candidate-campaign-comparison`. Not accepted.
+
 ## Decision-record format for future entries
 
 Each future decision should record:

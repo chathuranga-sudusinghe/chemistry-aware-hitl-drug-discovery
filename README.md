@@ -41,6 +41,7 @@ This is a **PROPOSED research hypothesis**, not an established result. The exact
 - [`docs/novelty.md`](docs/novelty.md) — novelty hypotheses and claim boundaries.
 - [`docs/methodology.md`](docs/methodology.md) — proposed methodological framework.
 - [`docs/chemistry-scope.md`](docs/chemistry-scope.md) — chemistry depth and open domain decisions.
+- [`docs/candidate-campaigns.md`](docs/candidate-campaigns.md) — PROPOSED documentation-level comparison of candidate experimental campaigns (no data inspected).
 - [`docs/literature-review.md`](docs/literature-review.md) — scientific synthesis of closest prior work.
 - [`docs/literature-search.md`](docs/literature-search.md) — literature search protocol and log.
 - [`docs/references.md`](docs/references.md) — verified reference registry.
